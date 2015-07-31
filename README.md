@@ -1,7 +1,7 @@
 # Learning Rails
 
 
-I'm making a Rails app and this is its README. Thank you for reading it despite it being incredibly boring.
+I'm making a Rails app and this is its README. Thank you for reading it despite its being incredibly boring.
 
 ## Ruby version
 
