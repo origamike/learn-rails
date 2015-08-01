@@ -25,7 +25,7 @@ gem 'foundation-rails'
 gem 'gibbon'
 gem 'high_voltage'
 gem 'simple_form'
-
+gem 'pg', group: :production
 
 
 group :development, :test do
