@@ -6,6 +6,7 @@
   font-size: rem-calc(28);
   line-height: 45px; }
 .top-bar .name a {
+  font-size: rem-calc(24);
   font-weight: normal;
   color: white;
   padding: 0 15px; }
@@ -23,26 +24,29 @@
   }
 // create your own classes
 // to make views framework-neutral
-.column {
-  @include six-columns-centered;
-  }
-.form {
-  @include grid-column(6);
-  }
-.form-centered {
-  @include six-columns-centered;
-  }
+// .column {
+//   @include six-columns-centered;
+//   }
+// .form {
+//   @include grid-column(6);
+//   }
+// .form-centered {
+//   @include six-columns-centered;
+//   }
 .submit {
   @extend .button;
   @extend .radius;
   }
 // apply styles to HTML elements
 // to make views framework-neutral
-html {
-  background: #333 url('whoacave3.png') no-repeat center center;
-}
+body {
+  background: #bbb url('whoacave3.png') no-repeat center center;
+  }
 main {
   @include twelve-columns;
+  background: #bbb;
+  width: 40%;
+  margin: 0px auto;
   }
 section {
   @extend .row;

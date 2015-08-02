@@ -6,8 +6,10 @@
 <% end %>
 <section>
   <%= image_tag "michael.jpg"  %>
+  <p>This is the wrong Michael Adams.<br><%= link_to "Here are some more of those", "http://michaelsadamsiamnot.tumblr.com", target:"_blank"%>.</p>
 </section>
 <section>
+  <p>This form works&mdash;it will actually put your name on a Mailchimp mailing list&mdash;but I'm not going to send you anything, I don't think.</p>
   <div class="column">
     <div class="form-centered">
       <%= simple_form_for @visitor do |f| %>
