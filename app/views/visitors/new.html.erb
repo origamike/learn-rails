@@ -1,4 +1,21 @@
-<h3>Home</h3>
-<p>Welcome to the open-concept home of <%= @owner.name %>.</p>
-<p>I was born on <%= @owner.birthdate %>.</p>
-<p>Only <%= @owner.countdown %> days until my birthday!</p>
+<%= content_for :title do %>
+  Michael Adams
+<% end %>
+<%= content_for :description do %>
+  Michael Adams made this website
+<% end %>
+<section>
+  <%= image_tag "michael.jpg"  %>
+</section>
+<section>
+  <div class="column">
+    <div class="form-centered">
+      <%= simple_form_for @visitor do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :email, label:false, :placeholder => 'Your email address...' %>
+        <br>
+        <%= f.button :submit, "Sign up for Mike's imaginary newsletter", class:'submit' %>
+      <% end %>
+    </div>
+  </div>
+</section>

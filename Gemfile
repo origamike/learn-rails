@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.0'
 
 # learn-rails
 gem 'foundation-rails'
-gem 'gibbon'
+gem 'gibbon', '1.2.1'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'pg', group: :production
