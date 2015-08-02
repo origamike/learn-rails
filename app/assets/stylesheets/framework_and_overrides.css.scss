@@ -38,6 +38,9 @@
   }
 // apply styles to HTML elements
 // to make views framework-neutral
+html {
+  background: image-url('#{whoacave3}.png') no-repeat center center fixed;
+}
 body {
   background-color: #444;
   }
