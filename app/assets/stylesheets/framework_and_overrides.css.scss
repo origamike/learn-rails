@@ -39,14 +39,10 @@
 // apply styles to HTML elements
 // to make views framework-neutral
 html {
-  background: image-url('#{whoacave3}.png') no-repeat center center fixed;
+  background: #333 url('whoacave3.png') no-repeat center center;
 }
-body {
-  background-color: #444;
-  }
 main {
   @include twelve-columns;
-  background-color: #ddd;
   }
 section {
   @extend .row;
