@@ -1,0 +1,28 @@
+#colorCycle { color: #C30;
+color: #FFF;
+text-align: center;
+animation-name: homeCycle;
+animation-duration:6s;
+animation-direction:alternate;
+animation-iteration-count:infinite;
+
+-webkit-animation-name: homeCycle;
+-webkit-animation-duration:6s;
+-webkit-animation-direction:alternate;
+-webkit-animation-iteration-count:infinite; }
+
+@keyframes homeCycle
+{
+0% {color:#006;}
+25% {color:#060;}
+50% {color:#CC3200;}
+75% {color:#603;}
+}
+
+@-webkit-keyframes homeCycle
+{
+0% {color:#006;}
+25% {color:#060;}
+50% {color:#CC3200;}
+75% {color:#603;}
+}
