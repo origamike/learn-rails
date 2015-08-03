@@ -1,14 +1,39 @@
 // import the CSS framework
 @import "foundation";
 
+$dark_green: #35584E;
+$medium_green: #48F2C2;
+$light_green: #40D8AD;
+
 // apply styles to HTML elements
 // to make views framework-neutral
+body {
+  background-color: $dark_green;
+}
+
+a {color: $medium_green;}
+a:hover {color: $light_green;}
+
+div a.item {
+  background-color: $dark_green;
+}
+
+div a.item:hover, div a.item:hover>*, div a.item.hover>* {
+  background-color: $light_green;
+  color: #111;
+}
+
 main {
-  background-color: transparentize(skyblue, 0.3);
+  color: #FFF;
+  background-color: $dark_green;
   width: 80%;
   text-align: left;
   margin: 20px auto;
   padding: 2rem;
   }
 
-body {background-color: #444;}
+.panel {background-color: #D2FFE5;}
+
+h3, h4 {
+  color: #DDD;
+}
