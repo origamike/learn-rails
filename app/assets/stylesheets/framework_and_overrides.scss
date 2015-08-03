@@ -37,3 +37,11 @@ main {
 h3, h4 {
   color: #DDD;
 }
+
+.button {background-color: $dark_green;}
+
+.button:hover {
+  background-color: $medium_green;
+  font-weight: bolder;
+  color: black;
+}
