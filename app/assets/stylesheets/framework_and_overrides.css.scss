@@ -24,9 +24,9 @@
   }
 // create your own classes
 // to make views framework-neutral
-// .column {
-//   @include six-columns-centered;
-//   }
+.column {
+  @include six-columns-centered;
+  }
 // .form {
 //   @include grid-column(6);
 //   }
@@ -40,10 +40,9 @@
 // apply styles to HTML elements
 // to make views framework-neutral
 body {
-  background: #bbb url('whoacave3.png') no-repeat center center;
+  background: #bbb image-url('whoacave4.png') no-repeat center center;
   }
 main {
-  @include twelve-columns;
   background: #bbb;
   width: 40%;
   margin: 0px auto;
