@@ -1,12 +1,19 @@
 <%# navigation styled for Zurb Foundation 5 %>
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name"><%= link_to 'Home', root_path %></li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
+<nav class="top-bar" data-topbar role="navigation">
+    <div class="logo">
+      <ul class="title-area">
+        <%= image_tag 'avatar.jpg', alt:"a version of Michael Adams"  %>
+        <li class="toggle-topbar menu-icon"><%= link_to 'Home', root_path %></li>
+      </ul>
+    </div>
+
   <div class="top-bar-section">
-    <ul>
-      <%= render 'layouts/navigation_links' %>
+    <!-- Right Nav Section -->
+    <ul class="right"><%= render 'layouts/navigation_links' %></ul>
+    <ul class="social-icons">
+      <li><a href="https://github.com/origamike"><i class="fi-social-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/profile/view?id=431618433"><i class="fi-social-linkedin"></i></a></li>
+      <li><a href="https://twitter.com/origamike"><i class="fi-social-twitter"></i></a></li>
     </ul>
   </div>
 </nav>
