@@ -10,7 +10,6 @@
 @media only screen and (min-width: 40.063em) {
 
   .top-bar {
-    height: 6rem;
     padding-top: 3rem;
     position: relative;
   }
@@ -18,13 +17,16 @@
   .social-icons {
     position: absolute;
     right: 0;
-    top: -1rem;
+    top: -45px;
   }
 
   .logo {
     width: 70px;
+    margin-top: -2.3rem;
   }
 }
+
+
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
@@ -40,22 +42,17 @@
 .column {
   @include six-columns-centered;
   }
-.submit {
-  @extend .button;
-  @extend .radius;
-  }
+$backgroundPath: "<%= image_path('whoacave7.png') %>";
+
 // apply styles to HTML elements
 // to make views framework-neutral
 body {
-  background: #bbb image-url("whoacave4.png") no-repeat center center;
+  background: #bbb url($backgroundPath)  no-repeat center center;
   }
 main {
-  background-color: transparentize(skyblue, 0.6);;
+  background-color: transparentize(skyblue, 0.6);
   width: 80%;
-  text-align: center;
-  margin: 0px auto;
-  }
-top-bar {
-  @extend .row;
-  margin-top: 20px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px;
   }
