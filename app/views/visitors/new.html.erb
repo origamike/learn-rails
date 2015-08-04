@@ -1,14 +1,15 @@
 <%= content_for :title do %>
-  Michael Adams
+Michael Adams
 <% end %>
 <%= content_for :description do %>
-  Michael Adams made this website
+Michael Adams made this website
 <% end %>
 
 <section class="intro">
-  <h3>Welcome!</h3>
-  <p>
-    Hi there. This site is a demo built to demonstrate that Michael can use
+  <div>
+    <h3>Welcome!</h3>
+    <p>
+      Hi there. This site is a demo built to demonstrate that Michael can use
       <ul>
         <li class="railsitem">Rails</li>
         <li class="rubyitem">Ruby</li>
@@ -19,32 +20,32 @@
     </p>
     <h3>What you'll find here</h3>
     <ul class="small-block-grid-3 medium-block-grid-3 large-block-grid-3">
-    <li><i class='fi-info large'></i>
-      There's some more information about Michael Adams in the <%= link_to "Info page", page_path('about') %></li>
-    <li><i class='fi-mail large'></i>
-      a way to send Michael a message on the <%= link_to "Contact page", new_contact_path %></li>
-    <li><i class='fi-social-github large'></i>
-      and a link to <%= link_to "this site's source code", "https://github.com/origamike/learn-rails", target: '_blank' %> on Github</li>
-    </ul>
-</section>
-<hr>
-  <section>
+      <li><i class='fi-info large'></i>
+        There's some more information about Michael Adams in the <%= link_to "Info page", page_path('about') %></li>
+        <li><i class='fi-mail large'></i>
+          a way to send Michael a message on the <%= link_to "Contact page", new_contact_path %></li>
+          <li><i class='fi-social-github large'></i>
+            and a link to <%= link_to "this site's source code", "https://github.com/origamike/learn-rails", target: '_blank' %> on Github</li>
+          </ul>
+        </div>
+      </section>
+      <section>
 
-    <div class="panel">
-      <h3>Newsletters are definitely the future of the internet!</h3>
-      <p><strong>luckily, there's one right here</strong></p>
-      <p>
-        This form works&mdash;it will put a valid email address on a Mailchimp mailing list&mdash;but it's only a tech demo.</p>
-        <strong>"I won't send you anything aside from the initial confirmation message; I promise."</strong><br>&mdash;Michael Adams, who wrote this page
-      </p>
+        <div class="panel">
+          <h3>Newsletters are definitely the future of the internet!</h3>
+          <p><strong>luckily, there's one right here</strong></p>
+          <p>
+            This form works&mdash;it will put a valid email address on a Mailchimp mailing list&mdash;but it's only a tech demo.</p>
+            <p><strong>"I won't send you anything aside from the initial confirmation message; I promise."</strong><br>&mdash;Michael Adams, who wrote this page
+            </p>
 
-    <div class="form">
-      <%= simple_form_for @visitor do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :email, label:false, placeholder: 'Your email address...' %>
-        <br>
-        <%= f.button :submit, "Join the mailing list", class:'submit button large-8.columns' %>
-      <% end %>
-    </div>
-  </div>
-</section>
+            <div class="form">
+              <%= simple_form_for @visitor do |f| %>
+              <%= f.error_notification %>
+              <%= f.input :email, label:false, placeholder: 'Your email address...' %>
+              <br>
+              <%= f.button :submit, "Join the mailing list", class:'submit button large-8.columns' %>
+              <% end %>
+            </div>
+          </div>
+        </section>

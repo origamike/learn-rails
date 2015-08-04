@@ -8,7 +8,8 @@ $light_green: #40D8AD;
 // apply styles to HTML elements
 // to make views framework-neutral
 body {
-  background-color: $dark_green;
+  background-image: url('google-earth-view-5589.jpg');
+
 }
 
 a {color: $medium_green;}
@@ -23,15 +24,16 @@ div a.item:hover, div a.item:hover>*, div a.item.hover>* {
   color: #111;
 }
 
-main {
+.intro, .panel {
+  background-color: transparentize($dark_green, 0.1);
   color: #FFF;
-  background-color: $dark_green;
   width: 79%;
   text-align: left;
   margin: 20px auto;
+  padding: 1rem;
   }
 
-.panel {background-color: #D2FFE5;}
+.panel {background-color: transparentize(#D2FFE5, 0.4);}
 
 h3, h4 {
   color: #DDD;

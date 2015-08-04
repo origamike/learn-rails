@@ -1,6 +1,8 @@
 <% content_for :title do %>Contact<% end %>
-<h3>Send Michael a note</h3>
+<div class="intro">
+	<h3>Send Michael a note</h3>
 <h4>He will actually read it.</h4>
+</div>
 <div class="form panel">
 	<%= simple_form_for @contact do |form| %>
 		<%= form.error_notification %>
