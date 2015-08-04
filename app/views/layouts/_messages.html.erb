@@ -3,7 +3,7 @@
   <% if msg.is_a?(String) %>
     <div data-alert class="alert-box round <%= name.to_s == 'notice' ? 'success' : 'alert' %>">
       <%= content_tag :div, msg %>
-      <a href="#" class="close">hush</a>
+      <a href='<%= root_path %>' class="close">hush</a>
     </div>
   <% end %>
 <% end %>
