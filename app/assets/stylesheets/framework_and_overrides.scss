@@ -26,10 +26,9 @@ div a.item:hover, div a.item:hover>*, div a.item.hover>* {
 main {
   color: #FFF;
   background-color: $dark_green;
-  width: 80%;
+  width: 79%;
   text-align: left;
   margin: 20px auto;
-  padding: 2rem;
   }
 
 .panel {background-color: #D2FFE5;}
@@ -44,4 +43,28 @@ h3, h4 {
   background-color: $medium_green;
   font-weight: bolder;
   color: black;
+}
+
+//silly decorations
+.intro ul {
+  padding-left: 2rem;
+}
+.railsitem:hover::after {
+  content: ' 🚂💨 hooray for rails!';
+}
+.rubyitem:hover::after {
+  content: '? more like WHOOby! 🎊🎉';
+}
+.herokuitem:hover::after {
+  content: ', pronounced HEROku? no, it\'s not';
+}
+.foundationitem:hover::after {
+  content: ', because Bootstrap doesn\'t give you chances to say \'Zurb\' to yourself all the time.';
+}
+.otheritem:hover::after {
+  content: ': HTML, CSS, JavaScript, RWD, rvm, git, plus probably some other others';
+}
+.large {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
 }
